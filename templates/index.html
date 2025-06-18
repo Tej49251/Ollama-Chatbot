@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LLaMA 3 Chatbot</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="/static/chat.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <div class="card shadow-lg">
+      <div class="card-header bg-primary text-white text-center">
+        <h4 class="mb-0">🤖 NOVA</h4>
+      </div>
+      <div class="card-body" style="height: 450px; overflow-y: auto;" id="chat-box">
+        <!-- Chat messages will appear here -->
+      </div>
+      <div class="card-footer">
+        <div class="input-group">
+          <input id="user-input" type="text" class="form-control" placeholder="Type your message..." />
+          <button id="mic-btn" class="btn btn-outline-secondary" title="Speak">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+          <button id="send-btn" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
